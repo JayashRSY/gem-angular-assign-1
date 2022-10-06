@@ -30,3 +30,7 @@ export class AppComponent {
 
 }
 
+// break code in component wish make child parent component
+// dont use any type
+// show error msg while user click on add button without any text
+//use reactive form for input field 
