@@ -1,0 +1,12 @@
+<div class="m-4">
+    <form [formGroup]="inputForm" (ngSubmit)="submitData()" class="d-flex">
+        <input type="text" formControlName="inputText" placeholder="Enter text" required>
+        <button class="ms-4 px-4 btn btn-primary">Add</button>
+    </form>
+    <p *ngIf="(!inputForm.get('inputText')?.valid && inputForm.get('inputText')?.touched) || isError" class="text-danger">**Please enter something</p>
+
+    <div class="my-4">
+        <p class="my-2 p-2 border border-dark rounded" *ngFor="let ele of list; let i = index"
+            [ngClass]="{'text-bg-primary': (i+1)%5===0}">{{ele}}</p>
+    </div>
+</div>
