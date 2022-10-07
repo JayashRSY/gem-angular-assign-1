@@ -18,7 +18,7 @@ export class FormComponent implements OnInit {
   }
 
   inputText = ''
-  list: any = [];
+  list: string[] = [];
   isError = false
 
   submitData() {    
