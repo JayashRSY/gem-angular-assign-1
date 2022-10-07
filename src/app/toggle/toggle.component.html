@@ -1,0 +1,21 @@
+<div class="m-4">
+    <button type="button" class="btn btn-danger" (click)="toggleBtn()">Display details</button> <span class="p-4">Click
+        Count: {{countClicks}}</span>
+    <div *ngIf="isToggle" class="my-2 p-4 text-bg-light border border-primary rounded">
+        <p>
+            The aim of this assignment is to provide hands-on learning of concepts of string interpolation, property
+            binding,
+            event binding, two-way data binding and basic directives in Angular. Following are the details of the same :
+        </p>
+        <ol>
+            <li>Add a button which says 'Display details'</li>
+            <li>Add a paragraph with any content of your choice.
+            <li>Toggle the displaying of this paragraph with the button created in the first step.</li>
+            <li>Log the number of 'Display details' button clicks.</li>
+            <li>Create another button and an input. The button will say 'Add'.</li>
+            <li>Once a user inputs some text in the input box and clicks on the 'Add' button, data gets displayed below.
+            </li>
+            <li>Every fifth item will have a blue background.</li>
+        </ol>
+    </div>
+</div>
